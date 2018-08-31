@@ -1,6 +1,6 @@
 html {
 	background-color: #FFFFFF;
-    background-image: url('images/Bottom_texture.jpg');
+    background-image: url('../images/Bottom_texture.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -25,4 +25,5 @@ body {
 
 .l-page {
 	max-width: 1000px;
+	margin: auto;
 }
