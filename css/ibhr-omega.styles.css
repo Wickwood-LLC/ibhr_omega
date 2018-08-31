@@ -1,5 +1,33 @@
-img, media {
-  max-width: 100%;
+/* No files to import found in variables/* */
+/* No files to import found in abstractions/* */
+html {
+  background-color: #FFFFFF;
+  background-image: url("images/Bottom_texture.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 
-/* No files to import found in partials/components/**\/* */
+a {
+  color: #025CCA;
+}
+a:hover {
+  color: #209BB6;
+}
+a:visited {
+  color: #19798F;
+}
+
+body {
+  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+  font-size: 16px;
+}
+
+.l-page {
+  max-width: 1000px;
+}
+
+/* No files to import found in components/* */
+
+/*# sourceMappingURL=ibhr-omega.styles.css.map */
