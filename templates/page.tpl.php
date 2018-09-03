@@ -1,238 +1,117 @@
 <?php
-    $vars = get_defined_vars();
-    // $view = get_artx_drupal_view();
-    // $view->print_head($vars);
 
-    if (isset($page))
-        foreach (array_keys($page) as $name)
-                $$name = & $page[$name];
-    $art_sidebar_left = isset($sidebar_left) && !empty($sidebar_left) ? $sidebar_left : NULL;
-    $art_sidebar_right = isset($sidebar_right) && !empty($sidebar_right) ? $sidebar_right : NULL;
-    if (!isset($vnavigation_left)) $vnavigation_left = NULL;
-    if (!isset($vnavigation_right)) $vnavigation_right = NULL;
-    $tabs = (isset($tabs) && !(empty($tabs))) ? '<ul class="arttabs_primary">'.render($tabs).'</ul>' : NULL;
-    $tabs2 = (isset($tabs2) && !(empty($tabs2))) ?'<ul class="arttabs_secondary">'.render($tabs2).'</ul>' : NULL;
+/**
+ * @file
+ * Default theme implementation to display a single Drupal page.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - $base_path: The base URL path of the Drupal installation. At the very
+ *   least, this will always default to /.
+ * - $directory: The directory the template is located in, e.g. modules/system
+ *   or themes/bartik.
+ * - $is_front: TRUE if the current page is the front page.
+ * - $logged_in: TRUE if the user is registered and signed in.
+ * - $is_admin: TRUE if the user has permission to access administration pages.
+ *
+ * Site identity:
+ * - $front_page: The URL of the front page. Use this instead of $base_path,
+ *   when linking to the front page. This includes the language domain or
+ *   prefix.
+ * - $logo: The path to the logo image, as defined in theme configuration.
+ * - $site_name: The name of the site, empty when display has been disabled
+ *   in theme settings.
+ * - $site_slogan: The slogan of the site, empty when display has been disabled
+ *   in theme settings.
+ *
+ * Navigation:
+ * - $main_menu (array): An array containing the Main menu links for the
+ *   site, if they have been configured.
+ * - $secondary_menu (array): An array containing the Secondary menu links for
+ *   the site, if they have been configured.
+ * - $secondary_menu_heading: The title of the menu used by the secondary links.
+ * - $breadcrumb: The breadcrumb trail for the current page.
+ *
+ * Page content (in order of occurrence in the default page.tpl.php):
+ * - $title_prefix (array): An array containing additional output populated by
+ *   modules, intended to be displayed in front of the main title tag that
+ *   appears in the template.
+ * - $title: The page title, for use in the actual HTML content.
+ * - $title_suffix (array): An array containing additional output populated by
+ *   modules, intended to be displayed after the main title tag that appears in
+ *   the template.
+ * - $messages: HTML for status and error messages. Should be displayed
+ *   prominently.
+ * - $tabs (array): Tabs linking to any sub-pages beneath the current page
+ *   (e.g., the view and edit tabs when displaying a node).
+ * - $action_links (array): Actions local to the page, such as 'Add menu' on the
+ *   menu administration interface.
+ * - $feed_icons: A string of all feed icons for the current page.
+ * - $node: The node object, if there is an automatically-loaded node
+ *   associated with the page, and the node ID is the second argument
+ *   in the page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_page()
+ * @see template_process()
+ * @see omega_preprocess_page()
+ */
 ?>
-    <div id="art-main">
-        <div class="cleared reset-box"></div>
-        <div class="art-header">
-            <div class="art-header-position">
-                <div class="art-header-wrapper">
-                    <div class="cleared reset-box"></div>
-                    <div class="art-header-inner">
-                        <div class="art-headerobject"></div>
-                        <div class="art-logo">
-                            <?php   if (!empty($site_name)) { echo '<h1 class="art-logo-name"><a href="'.check_url($front_page).'" title = "'.$site_name.'">'.$site_name.'</a></h1>'; } ?>
-                            <?php   if (!empty($site_slogan)) { echo '<h2 class="art-logo-text">'.$site_slogan.'</h2>'; } ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <?php if (!empty($navigation) || !empty($extra1) || !empty($extra2)): ?>
-            <div class="art-bar art-nav">
-                <div class="art-nav-outer">
-                    <div class="art-nav-wrapper">
-                        <div class="art-nav-inner">
-                            <?php if (!empty($extra1)) : ?>
-                            <div class="art-hmenu-extra1">
-                                <?php echo render($extra1); ?>
-                            </div>
-                            <?php endif; ?>
-                            <?php if (!empty($extra2)) : ?>
-                            <div class="art-hmenu-extra2">
-                                <?php echo render($extra2); ?>
-                            </div>
-                            <?php endif; ?>
-                            <div class="art-nav-center">
-                                <?php if (!empty($navigation)) : ?>
-                                <?php echo render($navigation); ?>
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cleared reset-box"></div>
-            <?php endif;?>
-        </div>
-        <div class="cleared reset-box"></div>
-        <div class="art-box art-sheet">
-            <div class="art-box-body art-sheet-body">
-                <?php if (!empty($banner1)) { echo '<div id="banner1">'.render($banner1).'</div>'; } ?>
-                <?php echo art_placeholders_output(render($top1), render($top2), render($top3)); ?>
-                <div class="art-layout-wrapper">
-                    <div class="art-content-layout">
-                        <div class="art-content-layout-row">
-                            <?php if (!empty($art_sidebar_left) || !empty($vnavigation_left))
-echo art_get_sidebar($art_sidebar_left, $vnavigation_left, 'art-sidebar1'); ?>
-                            <div class="<?php echo art_get_content_cell_style($art_sidebar_left, $vnavigation_left, $art_sidebar_right, $vnavigation_right, $content); ?>">
-                                <?php if (!empty($banner2)) { echo '<div id="banner2">'.render($banner2).'</div>'; } ?>
-                                <?php if ((!empty($user1)) && (!empty($user2))) : ?>
-                                <table class="position" cellpadding="0" cellspacing="0" border="0">
-                                    <tr valign="top">
-                                        <td class="half-width">
-                                            <?php echo render($user1); ?>
-                                        </td>
-                                        <td>
-                                            <?php echo render($user2); ?>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <?php else: ?>
-                                <?php if (!empty($user1)) { echo '<div id="user1">'.render($user1).'</div>'; }?>
-                                <?php if (!empty($user2)) { echo '<div id="user2">'.render($user2).'</div>'; }?>
-                                <?php endif; ?>
-                                <?php if (!empty($banner3)) { echo '<div id="banner3">'.render($banner3).'</div>'; } ?>
-                                <?php if (!empty($breadcrumb)): ?>
-                                <div class="art-box art-post">
-                                    <div class="art-box-body art-post-body">
-                                        <div class="art-post-inner art-article">
-                                            <div class="art-postcontent">
-                                                <?php { echo $breadcrumb; } ?>
-                                            </div>
-                                            <div class="cleared"></div>
-                                        </div>
-                                        <div class="cleared"></div>
-                                    </div>
-                                </div>
-                                <?php endif; ?>
-                                <?php if (($is_front) || (isset($node) && isset($node->nid))): ?>
-                                <?php if (!empty($tabs) || !empty($tabs2)): ?>
-                                <div class="art-box art-post">
-                                    <div class="art-box-body art-post-body">
-                                        <div class="art-post-inner art-article">
-                                            <div class="art-postcontent">
-                                                <?php if (!empty($tabs)) { echo $tabs.'<div class="cleared"></div>'; }; ?>
-                                                <?php if (!empty($tabs2)) { echo $tabs2.'<div class="cleared"></div>'; } ?>
-                                            </div>
-                                            <div class="cleared"></div>
-                                        </div>
-                                        <div class="cleared"></div>
-                                    </div>
-                                </div>
-                                <?php endif; ?>
-                                <?php if (!empty($mission) || !empty($help) || !empty($messages) || !empty($action_links)): ?>
-                                <div class="art-box art-post">
-                                    <div class="art-box-body art-post-body">
-                                        <div class="art-post-inner art-article">
-                                            <div class="art-postcontent">
-                                                <?php if (isset($mission) && !empty($mission)) { echo '<div id="mission">'.$mission.'</div>'; }; ?>
-                                                <?php if (!empty($help)) { echo render($help); } ?>
-                                                <?php if (!empty($messages)) { echo $messages; } ?>
-                                                <?php if (isset($action_links) && !empty($action_links)): ?>
-                                                <ul class="action-links">
-                                                    <?php print render($action_links); ?>
-                                                </ul>
-                                                <?php endif; ?>
-                                            </div>
-                                            <div class="cleared"></div>
-                                        </div>
-                                        <div class="cleared"></div>
-                                    </div>
-                                </div>
-                                <?php endif; ?>
-                                <?php $art_post_position = strpos(render($content), "art-post"); ?>
-                                <?php if ($art_post_position === FALSE): ?>
-                                <div class="art-box art-post">
-                                    <div class="art-box-body art-post-body">
-                                        <div class="art-post-inner art-article">
-                                            <div class="art-postcontent">
-                                                <?php endif; ?>
-                                                <?php echo art_content_replace(render($content)); ?>
-                                                <?php if ($art_post_position === FALSE): ?>
-                                            </div>
-                                            <div class="cleared"></div>
-                                        </div>
-                                        <div class="cleared"></div>
-                                    </div>
-                                </div>
-                                <?php endif; ?>
-                                <?php else: ?>
-                                <div class="art-box art-post">
-                                    <div class="art-box-body art-post-body">
-                                        <div class="art-post-inner art-article">
-                                            <div class="art-postcontent">
-                                                <?php print render($title_prefix); ?>
-                                                <?php if ($title): ?>
-                                                <h1 class="title" id="page-title">
-    <?php print bb2html($title); ?>
-  </h1>
-                                                <?php endif; ?>
-                                                <?php print render($title_suffix); ?>
-                                                <?php if (!empty($tabs)) { echo $tabs.'<div class="cleared"></div>'; }; ?>
-                                                <?php if (!empty($tabs2)) { echo $tabs2.'<div class="cleared"></div>'; } ?>
-                                                <?php if (isset($mission) && !empty($mission)) { echo '<div id="mission">'.$mission.'</div>'; }; ?>
-                                                <?php if (!empty($help)) { echo render($help); } ?>
-                                                <?php if (!empty($messages)) { echo $messages; } ?>
-                                                <?php if (isset($action_links) && !empty($action_links)): ?>
-                                                <ul class="action-links">
-                                                    <?php print render($action_links); ?>
-                                                </ul>
-                                                <?php endif; ?>
-                                                <?php echo art_content_replace(render($content)); ?>
-                                            </div>
-                                            <div class="cleared"></div>
-                                        </div>
-                                        <div class="cleared"></div>
-                                    </div>
-                                </div>
-                                <?php endif; ?>
-                                <?php if (!empty($banner4)) { echo '<div id="banner4">'.render($banner4).'</div>'; } ?>
-                                <?php if (!empty($user3) && !empty($user4)) : ?>
-                                <table class="position" cellpadding="0" cellspacing="0" border="0">
-                                    <tr valign="top">
-                                        <td class="half-width">
-                                            <?php echo render($user3); ?>
-                                        </td>
-                                        <td>
-                                            <?php echo render($user4); ?>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <?php else: ?>
-                                <?php if (!empty($user3)) { echo '<div id="user1">'.render($user3).'</div>'; }?>
-                                <?php if (!empty($user4)) { echo '<div id="user2">'.render($user4).'</div>'; }?>
-                                <?php endif; ?>
-                                <?php if (!empty($banner5)) { echo '<div id="banner5">'.render($banner5).'</div>'; } ?>
-                            </div>
-                            <?php if (!empty($art_sidebar_right) || !empty($vnavigation_right))
-echo art_get_sidebar($art_sidebar_right, $vnavigation_right, 'art-sidebar2'); ?>
-                        </div>
-                    </div>
-                </div>
-                <div class="cleared"></div>
-                <?php echo art_placeholders_output(render($bottom1), render($bottom2), render($bottom3)); ?>
-                <?php if (!empty($banner6)) { echo '<div id="banner6">'.render($banner6).'</div>'; } ?>
-                <div class="cleared"></div>
-            </div>
-        </div>
-        <div class="art-footer">
-            <div class="art-footer-body">
-                <div class="art-footer-center">
-                    <div class="art-footer-wrapper">
-                        <div class="art-footer-text">
-                            <?php
-                    $footer = render($footer_message);
-                    if (!empty($footer) && (trim($footer) != '')) {
-                        echo $footer;
-                    }
-                    else {
-                        ob_start(); ?>
-                                <p>Copyright ©
-                                    <?php echo ( date("Y") <= 2012 ? "2012" : "2012-".date("Y")); ?> Owen K. Weber, All Rights Reserved.</p>
-                                <p><a href="/privacy-policy">Privacy Policy</a> • <a href="/terms-of-use">Website Terms of Use</a> • <a href="/contact">Contact Us</a> • <a href="/affiliate-disclosure">Affiliate Disclosure</a></p>
-                                <div class="cleared"></div>
-                                <p class="art-page-footer"></p>
-                                <?php echo str_replace('%YEAR%', date('Y'), ob_get_clean());
-                    }
-                ?>
-                                <?php if (!empty($copyright)) { echo '<div id="copyright">'.render($copyright).'</div>'; } ?>
-                        </div>
-                    </div>
-                </div>
-                <div class="cleared"></div>
-            </div>
-        </div>
-        <div class="cleared"></div>
+<div class="l-page">
+  <header class="l-header" role="banner">
+      <?php if ($logo): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+      <?php endif; ?>
+
+      <?php if ($site_name || $site_slogan): ?>
+        <?php if ($site_name): ?>
+          <h1 class="site-name">
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+          </h1>
+        <?php endif; ?>
+
+        <?php if ($site_slogan): ?>
+          <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
+        <?php endif; ?>
+      <?php endif; ?>
+
+      <?php print render($page['branding']); ?>
+
+    <?php print render($page['header']); ?>
+    <?php print render($page['navigation']); ?>
+  </header>
+
+  <div class="l-main">
+    <div class="l-content" role="main">
+      <?php print render($page['highlighted']); ?>
+      <?php print $breadcrumb; ?>
+      <a id="main-content"></a>
+      <?php print $messages; ?>
+      <div class="title-bar">
+        <?php print render($title_prefix); ?>
+        <?php if ($title): ?>
+          <h1 class="page-title"><?php print $title; ?></h1>
+        <?php endif; ?>
+        <?php print render($title_suffix); ?>
+        <?php print render($tabs); ?>
+      </div>
+      <?php print render($page['help']); ?>
+      <?php if ($action_links && !(in_array($node->type, array('article_post', 'panopoly_news_article', 'press_release')))): ?> 
+        <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php endif; ?>
+      <main id="main-content">
+        <?php print render($page['content']); ?>
+        <?php print $feed_icons; ?>
+      </main>
     </div>
-    <?php $view->print_closure($vars); ?>
+
+    <?php print render($page['sidebar_first']); ?>
+    <?php print render($page['sidebar_second']); ?>
+  </div>
+
+  <footer class="l-footer" role="contentinfo">
+    <?php print render($page['footer']); ?>
+  </footer>
+</div>
