@@ -567,6 +567,13 @@
 		"oAP": "\/css\/ibhr-omega.styles.css.map",
 		"oF": 0
 		},
+	"\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/favicon.ico",
+		"oF": 0
+		},
 	"\/gulpfile.js": {
 		"ft": 64,
 		"ma": 0,
