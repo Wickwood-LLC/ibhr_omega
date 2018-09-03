@@ -4,7 +4,7 @@
 	padding: 1em;
 	background: rgba(207, 242, 255, 0.85);
 	box-shadow: 1px 1px 3px 0px #5d5d5d;
-	overflow: auto;
+	overflow: visible;
 	margin-top: 6px;
 	display: inline-block;
 	width: 100%;
@@ -18,7 +18,7 @@
 	}
 
 	.site-name {
-		margin-top: 0;
+		margin: 0;
 		margin-right: 35px;
 		padding-top: 0.5em;
 
