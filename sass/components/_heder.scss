@@ -1,0 +1,60 @@
+.l-header {
+	border-radius: 10px;
+	border: 2px solid #4f899e;
+	padding: 1em;
+	background: rgba(207, 242, 255, 0.85);
+	box-shadow: 1px 1px 3px 0px #5d5d5d;
+	overflow: auto;
+	margin-top: 6px;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+
+	.site-logo {
+		float: left;
+		margin-left: 3%;
+	}
+
+	.site-name {
+		margin-top: 0;
+		margin-right: 35px;
+
+		a {
+			font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
+			font-style: normal;
+			font-weight: bold;
+			text-decoration: none;
+			font-variant: small-caps;
+			font-size: 44px;
+			padding: 0;
+			margin: 0;
+			color: #125564;
+			text-shadow: 1px 2px 3px rgba(255,255,255,0.95);
+			letter-spacing: 1.5px;
+		}
+	}
+
+	.site-slogan {
+		display: block;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		color: #C171A9;
+		text-shadow: 1px 1px 1px rgba(26,25,25,0.57);
+		letter-spacing: 1.5px;
+		font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 28px;
+		text-decoration: none;
+		margin-right: 35px;
+	}
+
+	#block-widgets-s-socialmedia-profile-default {
+		position: absolute;
+		right: 0;
+		top: 1em;
+		margin: 2px 10px 2px 2px;
+	}
+}
