@@ -25,13 +25,24 @@
 				padding: 0 17px;
 				line-height: 27px;
 				text-align: left;
-				background: #ffffff;
-				background: linear-gradient(to bottom, #ffffff 0%,#05abe0 100%);
 
-				&:hover {
-					background: linear-gradient(to bottom, #2690a9 0%,#0b2d36 100%);
-					color: #BAE8F3;
+				.sf-sub-indicator {
+					top: 0;
+					background-position: 0 -100px;
+					right: -7px;
+					position: relative;
+					display: inline-block;
 				}
+			}
+		}
+
+		li.sf-depth-1 > a {
+			background: #ffffff;
+			background: linear-gradient(to bottom, #ffffff 0%,#05abe0 100%);
+
+			&:hover {
+				background: linear-gradient(to bottom, #2690a9 0%,#0b2d36 100%);
+				color: #BAE8F3;
 			}
 		}
 	}
