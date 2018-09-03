@@ -37,6 +37,7 @@ body {
   background: rgba(207, 242, 255, 0.85);
   -webkit-box-shadow: 1px 1px 3px 0px #5d5d5d;
           box-shadow: 1px 1px 3px 0px #5d5d5d;
+  overflow: auto;
 }
 .boxed .block__title {
   margin-top: 0;
