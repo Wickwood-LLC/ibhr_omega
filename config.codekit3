@@ -723,17 +723,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/images\/header-object.png": {
-		"ft": 32768,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/images\/header-object.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/images\/header.jpg": {
 		"ft": 16384,
 		"iS": 0,
@@ -970,7 +959,7 @@
 		},
 	"\/logo.png": {
 		"ft": 32768,
-		"iS": 1775,
+		"iS": 30623,
 		"oA": 0,
 		"oAP": "\/logo.png",
 		"oF": 0,
