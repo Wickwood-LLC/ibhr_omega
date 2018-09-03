@@ -61,10 +61,12 @@ body {
 .l-header .site-logo {
   float: left;
   margin-left: 3%;
+  text-align: center;
 }
 .l-header .site-name {
   margin-top: 0;
   margin-right: 35px;
+  padding-top: 0.5em;
 }
 .l-header .site-name a {
   font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
