@@ -15,8 +15,6 @@
 
 			a {
 				text-decoration: none;
-				border: 1px solid #8d793f;
-				border-radius: 5px;
 				display: block;
 				height: 27px;
 				cursor: pointer;
@@ -39,11 +37,20 @@
 		li.sf-depth-1 > a {
 			background: #ffffff;
 			background: linear-gradient(to bottom, #ffffff 0%,#05abe0 100%);
+			border: 1px solid #8d793f;
+			border-radius: 5px;
 
 			&:hover {
 				background: linear-gradient(to bottom, #2690a9 0%,#0b2d36 100%);
 				color: #BAE8F3;
 			}
+		}
+
+		li.sfHover > ul {
+			left: 0;
+			top: 30px;
+			background-color: #bae8f3;
+			border: 1px solid #49c3df;
 		}
 	}
 }
