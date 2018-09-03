@@ -9,8 +9,30 @@
 		li {
 			list-style: none;
 			display: inline-block;
+			margin: 0 4px;
+			float: none;
+			text-align: left;
 
-			margin-left: 8px;
+			a {
+				text-decoration: none;
+				border: 1px solid #8d793f;
+				border-radius: 5px;
+				display: block;
+				height: 27px;
+				cursor: pointer;
+				text-decoration: none;
+				color: #092C34;
+				padding: 0 17px;
+				line-height: 27px;
+				text-align: left;
+				background: #ffffff;
+				background: linear-gradient(to bottom, #ffffff 0%,#05abe0 100%);
+
+				&:hover {
+					background: linear-gradient(to bottom, #2690a9 0%,#0b2d36 100%);
+					color: #BAE8F3;
+				}
+			}
 		}
 	}
 }
