@@ -1372,6 +1372,13 @@
 		"oAP": "\/template.php",
 		"oF": 0
 		},
+	"\/templates\/page.tpl.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/page.tpl.php",
+		"oF": 0
+		},
 	"\/templates\/README.md": {
 		"cB": 0,
 		"cS": 0,
