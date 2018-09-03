@@ -111,12 +111,14 @@
         <?php print render($page['sidebar_first']); ?>
         <?php print render($page['sidebar_second']); ?>
     </div>
-
+    
+    <?php if (!empty($page['bottom1']) || !empty($page['bottom2']) || !empty($page['bottom3'])) : ?>
     <section class="l-bottom">
-        <?php if (!empty($page['bottom1'])) { echo '<div class="l-region l-region--bottom1">'.render($page['bottom1']).'</div>'; } ?>
-        <?php if (!empty($page['bottom2'])) { echo '<div class="l-region l-region--bottom2">'.render($page['bottom2']).'</div>'; } ?>
-        <?php if (!empty($page['bottom3'])) { echo '<div class="l-region l-region--bottom3">'.render($page['bottom3']).'</div>'; } ?>
+        <?php if (!empty($page['bottom1'])) { print render($page['bottom1']); } ?>
+        <?php if (!empty($page['bottom2'])) { print render($page['bottom2']); } ?>
+        <?php if (!empty($page['bottom3'])) { print render($page['bottom3']); } ?>
     </section>
+    <?php endif; ?>
 
     <footer class="l-footer" role="contentinfo">
         <?php print render($page['footer']); ?>
