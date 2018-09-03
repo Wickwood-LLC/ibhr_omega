@@ -1,0 +1,9 @@
+.l-bottom {
+	display: flex;
+	flex-flow: row wrap;
+
+	.l-region {
+	    flex: 1 1 33%;
+	    min-width: 250px;
+	}
+}
