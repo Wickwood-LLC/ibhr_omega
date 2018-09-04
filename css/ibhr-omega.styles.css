@@ -189,6 +189,37 @@ body {
   color: #082830;
 }
 
+#superfish-1-accordion {
+  display: block;
+  text-align: center;
+  background-color: #bae8f3;
+  border: 1px solid #49c3df;
+  margin-top: 0.5em;
+}
+#superfish-1-accordion li:hover {
+  background-color: #8BD0E0;
+}
+#superfish-1-accordion li a {
+  text-decoration: none;
+  line-height: 27px;
+  color: #092C34;
+}
+#superfish-1-accordion li a:hover {
+  color: #255d98;
+}
+#superfish-1-accordion li.even {
+  background-color: #E8F9FD;
+}
+#superfish-1-accordion li.menuparent ul {
+  display: block;
+  background-color: #bae8f3;
+  border: 1px solid #49c3df;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 1em;
+  width: calc(100% - 1em);
+}
+
 .l-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
