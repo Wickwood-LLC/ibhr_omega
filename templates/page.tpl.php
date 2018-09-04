@@ -89,14 +89,6 @@
             <?php print $breadcrumb; ?>
             <a id="main-content"></a>
             <?php print $messages; ?>
-            <div class="title-bar">
-                <?php print render($title_prefix); ?>
-                <?php if ($title): ?>
-                <h1 class="page-title"><?php print $title; ?></h1>
-                <?php endif; ?>
-                <?php print render($title_suffix); ?>
-                <?php print render($tabs); ?>
-            </div>
             <?php print render($page['help']); ?>
             <?php if ($action_links && !(in_array($node->type, array('article_post', 'panopoly_news_article', 'press_release')))): ?>
             <ul class="action-links">
@@ -104,6 +96,14 @@
             </ul>
             <?php endif; ?>
             <main id="main-content">
+                <div class="title-bar">
+                    <?php print render($title_prefix); ?>
+                    <?php if ($title): ?>
+                    <h1 class="page-title"><?php print $title; ?></h1>
+                    <?php endif; ?>
+                    <?php print render($title_suffix); ?>
+                    <?php print render($tabs); ?>
+                </div>
                 <?php print render($page['content']); ?>
                 <?php print $feed_icons; ?>
             </main>
