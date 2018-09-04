@@ -28,6 +28,13 @@ body {
 
 .l-page {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .l-header,
@@ -50,6 +57,32 @@ body {
 }
 .boxed .block__title {
   margin-top: 0;
+}
+
+.l-footer {
+  display: inline-block;
+  width: 100vw;
+  background-color: #b7daea;
+  text-align: center;
+  padding: 5px;
+}
+.l-footer .copyright p {
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana,Geneva,Arial,Helvetica,Sans-Serif;
+  color: #0F4652;
+}
+.l-footer .footer-links a {
+  color: #125868;
+  font-size: 13px;
+  text-decoration: none;
+}
+.l-footer .footer-links a:visited {
+  color: #716133;
+}
+.l-footer .footer-links a:hover {
+  color: #18768B;
+  text-decoration: underline;
 }
 
 .l-header {
