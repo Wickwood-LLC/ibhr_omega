@@ -111,6 +111,7 @@ body {
   margin-top: 6px;
   display: inline-block;
   width: 100%;
+  max-width: calc(1000px - 20px);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -330,6 +331,17 @@ main#main-content table thead tr td {
   background-color: transparent;
   border-style: none;
 }
+main#main-content ul.tabs {
+  border-radius: 10px;
+  border: 2px solid #4f899e;
+  margin: 10px;
+  padding: 1em;
+  background: rgba(207, 242, 255, 0.85);
+  -webkit-box-shadow: 1px 1px 3px 0px #5d5d5d;
+          box-shadow: 1px 1px 3px 0px #5d5d5d;
+  overflow: auto;
+  list-style: none;
+}
 main#main-content ul.action-links {
   border-radius: 10px;
   border: 2px solid #4f899e;
@@ -350,6 +362,17 @@ main#main-content ul.action-links li a:before {
   display: inline-block;
   margin-left: -1.3em;
   width: 1.3em;
+}
+main#main-content ul.breadcrumb {
+  border-radius: 10px;
+  border: 2px solid #4f899e;
+  margin: 10px;
+  padding: 1em;
+  background: rgba(207, 242, 255, 0.85);
+  -webkit-box-shadow: 1px 1px 3px 0px #5d5d5d;
+          box-shadow: 1px 1px 3px 0px #5d5d5d;
+  overflow: auto;
+  list-style: none;
 }
 
 .page-title {
