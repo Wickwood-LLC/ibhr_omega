@@ -75,6 +75,7 @@
 		background: linear-gradient(to bottom, #ffffff 0%,#05abe0 100%);
 		border: 1px solid #8d793f;
 		border-radius: 5px;
+		margin-bottom: 0.5em;
 
 		&:hover {
 			background: linear-gradient(to bottom, #2690a9 0%,#0b2d36 100%);
@@ -93,7 +94,7 @@
 	text-align: center;
 	background-color: #bae8f3;
 	border: 1px solid #49c3df;
-	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 
 	li {
 		a {
