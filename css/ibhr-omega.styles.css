@@ -150,6 +150,11 @@ body {
   background: linear-gradient(to bottom, #2690a9 0%, #0b2d36 100%);
   color: #BAE8F3;
 }
+#block-superfish-1 #superfish-1 li.sf-depth-1 > a.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#85d6e7), to(#2da5c1));
+  background: linear-gradient(to bottom, #85d6e7 0%, #2da5c1 100%);
+  color: #082830;
+}
 #block-superfish-1 #superfish-1 li.sfHover > ul {
   left: 0;
   top: 30px;

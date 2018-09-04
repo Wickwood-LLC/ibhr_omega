@@ -44,6 +44,11 @@
 				background: linear-gradient(to bottom, #2690a9 0%,#0b2d36 100%);
 				color: #BAE8F3;
 			}
+
+			&.active {
+				background: linear-gradient(to bottom, #85d6e7 0%,#2da5c1 100%);
+				color: #082830;
+			}
 		}
 
 		li.sfHover > ul {
