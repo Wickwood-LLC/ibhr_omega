@@ -307,7 +307,8 @@ main#main-content table {
   margin: 1px auto;
   border-style: none;
 }
-main#main-content table th, main#main-content table td {
+main#main-content table th,
+main#main-content table td {
   padding: 10px;
   vertical-align: top;
   text-align: left;
@@ -341,6 +342,34 @@ main#main-content ul.tabs {
           box-shadow: 1px 1px 3px 0px #5d5d5d;
   overflow: auto;
   list-style: none;
+}
+main#main-content ul.tabs li a {
+  border: 1px solid black;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: "Comic Sans MS", Tahoma, Arial, Sans-Serif;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  color: #082830;
+  width: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#69cce3), to(#35b9d7));
+  background: linear-gradient(to bottom, #69cce3 0%, #35b9d7 100%);
+  padding: 0 8px;
+  cursor: pointer;
+  text-indent: 0;
+}
+main#main-content ul.tabs li a:hover {
+  color: #BAE8F3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#20788d), to(#11424d));
+  background: linear-gradient(to bottom, #20788d 0%, #11424d 100%);
+}
+main#main-content ul.tabs li a.active {
+  color: #092C34;
+  background: -webkit-gradient(linear, left top, left bottom, from(#98dceb), to(#5ec8df));
+  background: linear-gradient(to bottom, #98dceb 0%, #5ec8df 100%);
 }
 main#main-content ul.action-links {
   border-radius: 10px;
@@ -382,7 +411,7 @@ main#main-content ul.breadcrumb {
   margin: 5px 0;
   font-size: 28px;
   text-align: center;
-  font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
+  font-family: "Comic Sans MS", Tahoma, Arial, Sans-Serif;
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
