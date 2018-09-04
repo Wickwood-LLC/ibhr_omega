@@ -90,6 +90,7 @@
             <a id="main-content"></a>
             <?php print $messages; ?>
             <?php print render($page['help']); ?>
+            <?php print render($tabs); ?>
             <?php if ($action_links && !(in_array($node->type, array('article_post', 'panopoly_news_article', 'press_release')))): ?>
             <ul class="action-links">
                 <?php print render($action_links); ?>
@@ -102,7 +103,6 @@
                     <h1 class="page-title"><?php print $title; ?></h1>
                     <?php endif; ?>
                     <?php print render($title_suffix); ?>
-                    <?php print render($tabs); ?>
                 </div>
                 <?php print render($page['content']); ?>
                 <?php print $feed_icons; ?>
