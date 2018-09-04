@@ -213,6 +213,11 @@ body {
 #superfish-1-accordion li:hover {
   background-color: #8BD0E0;
 }
+#superfish-1-accordion li.menuparent > a:after {
+  content: '\f0da';
+  margin-left: 0.5em;
+  font-family: FontAwesome;
+}
 #superfish-1-accordion li.menuparent ul {
   display: block;
   background-color: #bae8f3;
@@ -221,6 +226,11 @@ body {
           box-sizing: border-box;
   margin-left: 1em;
   width: calc(100% - 1em);
+}
+#superfish-1-accordion li.menuparent.sf-expanded > a:after {
+  content: '\f0d7';
+  margin-left: 0.5em;
+  font-family: FontAwesome;
 }
 
 .l-bottom {
