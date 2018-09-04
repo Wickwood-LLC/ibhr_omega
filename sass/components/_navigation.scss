@@ -96,10 +96,6 @@
 	margin-top: 0.5em;
 
 	li {
-		&:hover {
-		    background-color: #8BD0E0;
-		}
-
 		a {
 			text-decoration: none;
 			line-height: 27px;
@@ -110,8 +106,14 @@
 			}
 		}
 	}
-	li.even {
+	li:nth-child(odd) {
+	    background-color: #bae8f3;
+	}
+	li:nth-child(even) {
 	    background-color: #E8F9FD;
+	}
+	li:hover {
+	    background-color: #8BD0E0;
 	}
 
 	li.menuparent ul {

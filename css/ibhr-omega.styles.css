@@ -196,9 +196,6 @@ body {
   border: 1px solid #49c3df;
   margin-top: 0.5em;
 }
-#superfish-1-accordion li:hover {
-  background-color: #8BD0E0;
-}
 #superfish-1-accordion li a {
   text-decoration: none;
   line-height: 27px;
@@ -207,8 +204,14 @@ body {
 #superfish-1-accordion li a:hover {
   color: #255d98;
 }
-#superfish-1-accordion li.even {
+#superfish-1-accordion li:nth-child(odd) {
+  background-color: #bae8f3;
+}
+#superfish-1-accordion li:nth-child(even) {
   background-color: #E8F9FD;
+}
+#superfish-1-accordion li:hover {
+  background-color: #8BD0E0;
 }
 #superfish-1-accordion li.menuparent ul {
   display: block;
