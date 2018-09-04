@@ -24,6 +24,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  margin: 0;
 }
 
 .l-page {
@@ -61,10 +62,12 @@ body {
 
 .l-footer {
   display: inline-block;
-  width: 100vw;
+  width: 100%;
   background-color: #b7daea;
   text-align: center;
   padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .l-footer .copyright p {
   margin: 0;

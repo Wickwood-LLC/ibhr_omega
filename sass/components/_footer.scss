@@ -1,9 +1,10 @@
 .l-footer {
 	display: inline-block;
-	width: 100vw;
+	width: 100%;
 	background-color: #b7daea;
 	text-align: center;
 	padding: 5px;
+	box-sizing: border-box;
 
 	.copyright p {
 		margin: 0;
