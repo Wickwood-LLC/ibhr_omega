@@ -26,6 +26,13 @@ body {
 }
 
 .l-page {
+	height: 100%;
+}
+
+.l-header,
+.l-main,
+.l-bottom {
 	max-width: 1000px;
 	margin: auto;
+	display: block;
 }

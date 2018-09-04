@@ -1,0 +1,28 @@
+.l-footer {
+	display: inline-block;
+	width: 100vw;
+	background-color: #b7daea;
+	text-align: center;
+	padding: 5px;
+
+	.copyright p {
+		margin: 0;
+		font-size: 16px;
+		font-family: Verdana,Geneva,Arial,Helvetica,Sans-Serif;
+		color: #0F4652;
+	}
+
+	.footer-links a {
+		color: #125868;
+		font-size: 13px;
+		text-decoration: none;
+
+		&:visited {
+			color: #716133;
+		}
+		&:hover {
+			color: #18768B;
+			text-decoration: underline;
+		}
+	}
+}
