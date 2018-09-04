@@ -9,12 +9,11 @@
 		li {
 			list-style: none;
 			display: inline-block;
-			margin: 0 4px;
+			margin: 4px;
 			float: none;
 			text-align: left;
 
 			a {
-				text-decoration: none;
 				display: block;
 				height: 27px;
 				cursor: pointer;
@@ -56,6 +55,35 @@
 			top: 30px;
 			background-color: #bae8f3;
 			border: 1px solid #49c3df;
+		}
+	}
+
+	.sf-accordion-toggle {
+		display: table;
+		margin: auto;
+	}
+
+	#superfish-1-toggle {
+		display: block;
+		height: 27px;
+		cursor: pointer;
+		text-decoration: none;
+		color: #092C34;
+		padding: 0 17px;
+		line-height: 27px;
+		background: #ffffff;
+		background: linear-gradient(to bottom, #ffffff 0%,#05abe0 100%);
+		border: 1px solid #8d793f;
+		border-radius: 5px;
+
+		&:hover {
+			background: linear-gradient(to bottom, #2690a9 0%,#0b2d36 100%);
+			color: #BAE8F3;
+		}
+
+		&.sf-expanded {
+			background: linear-gradient(to bottom, #85d6e7 0%,#2da5c1 100%);
+			color: #082830;
 		}
 	}
 }

@@ -116,12 +116,11 @@ body {
 #block-superfish-1 #superfish-1 li {
   list-style: none;
   display: inline-block;
-  margin: 0 4px;
+  margin: 4px;
   float: none;
   text-align: left;
 }
 #block-superfish-1 #superfish-1 li a {
-  text-decoration: none;
   display: block;
   height: 27px;
   cursor: pointer;
@@ -160,6 +159,34 @@ body {
   top: 30px;
   background-color: #bae8f3;
   border: 1px solid #49c3df;
+}
+#block-superfish-1 .sf-accordion-toggle {
+  display: table;
+  margin: auto;
+}
+#block-superfish-1 #superfish-1-toggle {
+  display: block;
+  height: 27px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #092C34;
+  padding: 0 17px;
+  line-height: 27px;
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#05abe0));
+  background: linear-gradient(to bottom, #ffffff 0%, #05abe0 100%);
+  border: 1px solid #8d793f;
+  border-radius: 5px;
+}
+#block-superfish-1 #superfish-1-toggle:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2690a9), to(#0b2d36));
+  background: linear-gradient(to bottom, #2690a9 0%, #0b2d36 100%);
+  color: #BAE8F3;
+}
+#block-superfish-1 #superfish-1-toggle.sf-expanded {
+  background: -webkit-gradient(linear, left top, left bottom, from(#85d6e7), to(#2da5c1));
+  background: linear-gradient(to bottom, #85d6e7 0%, #2da5c1 100%);
+  color: #082830;
 }
 
 .l-bottom {
