@@ -127,6 +127,11 @@ ul.breadcrumb {
     font-style: normal;
     font-weight: bold;
     text-decoration: none;
+
+    > a {
+        color: inherit;
+        text-decoration: inherit;
+    }
 }
 
 .media-gallery-view-full {
