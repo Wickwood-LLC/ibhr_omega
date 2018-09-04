@@ -6,7 +6,9 @@ body.not-front main#main-content {
 	background: rgba(207, 242, 255, 0.85);
 	box-shadow: 1px 1px 3px 0px #5d5d5d;
 	overflow: auto;
+}
 
+main#main-content {
 	table {
 		border-collapse: collapse;
 		margin: 1px auto;
@@ -36,6 +38,51 @@ body.not-front main#main-content {
 		    background-color: transparent;
 		    border-style: none;
 		}
+	}
+
+	ul.tabs {
+	    border-radius: 10px;
+	    border: 2px solid #4f899e;
+	    margin: 10px;
+	    padding: 1em;
+	    background: rgba(207, 242, 255, 0.85);
+	    box-shadow: 1px 1px 3px 0px #5d5d5d;
+	    overflow: auto;
+	    list-style: none;
+	}
+
+	ul.action-links {
+		border-radius: 10px;
+		border: 2px solid #4f899e;
+		margin: 10px;
+		padding: 1em;
+		background: rgba(207, 242, 255, 0.85);
+		box-shadow: 1px 1px 3px 0px #5d5d5d;
+		overflow: auto;
+		list-style: none;
+
+		li {
+			padding-left: 1.3em;
+
+			a:before {
+				content: "\f067";
+				font-family: FontAwesome;
+				display: inline-block;
+				margin-left: -1.3em;
+				width: 1.3em;
+			}
+		}
+	}
+
+	ul.breadcrumb {
+	    border-radius: 10px;
+	    border: 2px solid #4f899e;
+	    margin: 10px;
+	    padding: 1em;
+	    background: rgba(207, 242, 255, 0.85);
+	    box-shadow: 1px 1px 3px 0px #5d5d5d;
+	    overflow: auto;
+	    list-style: none;
 	}
 }
 

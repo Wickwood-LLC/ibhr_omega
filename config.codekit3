@@ -1318,7 +1318,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/components\/_heder.scss": {
+	"\/sass\/components\/_header.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1326,7 +1326,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/sass\/components\/_heder.css",
+		"oAP": "\/sass\/components\/_header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
