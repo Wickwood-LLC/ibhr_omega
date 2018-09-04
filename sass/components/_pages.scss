@@ -115,7 +115,8 @@ ul.breadcrumb {
     list-style: none;
 }
 
-.page-title {
+.page-title,
+.node__title {
     color: #125564;
     text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.95);
     letter-spacing: 1px;
