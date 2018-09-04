@@ -332,7 +332,8 @@ main#main-content table thead tr td {
   background-color: transparent;
   border-style: none;
 }
-main#main-content ul.tabs {
+
+ul.tabs {
   border-radius: 10px;
   border: 2px solid #4f899e;
   margin: 10px;
@@ -343,7 +344,7 @@ main#main-content ul.tabs {
   overflow: auto;
   list-style: none;
 }
-main#main-content ul.tabs li a {
+ul.tabs li a {
   border: 1px solid black;
   border-radius: 3px;
   text-decoration: none;
@@ -361,17 +362,18 @@ main#main-content ul.tabs li a {
   cursor: pointer;
   text-indent: 0;
 }
-main#main-content ul.tabs li a:hover {
+ul.tabs li a:hover {
   color: #BAE8F3;
   background: -webkit-gradient(linear, left top, left bottom, from(#20788d), to(#11424d));
   background: linear-gradient(to bottom, #20788d 0%, #11424d 100%);
 }
-main#main-content ul.tabs li a.active {
+ul.tabs li a.active {
   color: #092C34;
   background: -webkit-gradient(linear, left top, left bottom, from(#98dceb), to(#5ec8df));
   background: linear-gradient(to bottom, #98dceb 0%, #5ec8df 100%);
 }
-main#main-content ul.action-links {
+
+ul.action-links {
   border-radius: 10px;
   border: 2px solid #4f899e;
   margin: 10px;
@@ -382,17 +384,18 @@ main#main-content ul.action-links {
   overflow: auto;
   list-style: none;
 }
-main#main-content ul.action-links li {
+ul.action-links li {
   padding-left: 1.3em;
 }
-main#main-content ul.action-links li a:before {
+ul.action-links li a:before {
   content: "\f067";
   font-family: FontAwesome;
   display: inline-block;
   margin-left: -1.3em;
   width: 1.3em;
 }
-main#main-content ul.breadcrumb {
+
+ul.breadcrumb {
   border-radius: 10px;
   border: 2px solid #4f899e;
   margin: 10px;
