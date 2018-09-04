@@ -361,6 +361,7 @@ ul.tabs li a {
   padding: 0 8px;
   cursor: pointer;
   text-indent: 0;
+  line-height: 1.7;
 }
 ul.tabs li a:hover {
   color: #BAE8F3;
