@@ -33,6 +33,14 @@ p {
   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 }
 
+input, select, textarea {
+  vertical-align: middle;
+  font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
 .l-page {
   height: 100%;
   min-height: 100vh;
@@ -578,6 +586,17 @@ body.page-node-65 #webform-client-form-65 {
   clear: both;
   margin-left: auto;
   margin-right: auto;
+}
+body.page-node-65 #webform-client-form-65 label {
+  width: 160px;
+  display: block;
+  float: left;
+  margin-right: .5em;
+  text-align: left;
+}
+body.page-node-65 #webform-client-form-65 .description {
+  font-size: 0.85em;
+  font-family: Verdana,Geneva,Arial,Helvetica,Sans-Serif;
 }
 body.page-node-65 #webform-client-form-65 .form-item.webform-component {
   width: 95%;

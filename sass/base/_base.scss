@@ -32,6 +32,14 @@ p {
     font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 }
 
+input, select, textarea {
+    vertical-align: middle;
+    font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
 .l-page {
     height: 100%;
     min-height: 100vh;
