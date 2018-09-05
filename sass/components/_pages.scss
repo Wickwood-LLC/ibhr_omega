@@ -8,7 +8,8 @@ body.front .title-bar {
 	overflow: auto;
 }
 
-body.not-front main#main-content {
+body.not-front main#main-content,
+body:not(.reviews-view-panel-page) main#main-content {
     border-radius: 10px;
     border: 2px solid #4f899e;
     margin: 10px;
