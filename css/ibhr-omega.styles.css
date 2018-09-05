@@ -491,7 +491,8 @@ ul.breadcrumb {
 
 .page-title,
 .node__title,
-body.reviews-view-panel-page .field--name-field-renter-name,
+body.reviews-view-panel-page .pane-page-title,
+body.reviews-view-panel-page .views-field-field-renter-name h2,
 body.reviews-view-panel-page .views-field-title h2 {
   color: #125564;
   text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.95);
@@ -506,7 +507,8 @@ body.reviews-view-panel-page .views-field-title h2 {
 }
 .page-title > a,
 .node__title > a,
-body.reviews-view-panel-page .field--name-field-renter-name > a,
+body.reviews-view-panel-page .pane-page-title > a,
+body.reviews-view-panel-page .views-field-field-renter-name h2 > a,
 body.reviews-view-panel-page .views-field-title h2 > a {
   color: inherit;
   text-decoration: inherit;
