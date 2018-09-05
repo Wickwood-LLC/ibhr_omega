@@ -33,7 +33,7 @@ function ibhr_omega_breadcrumb($vars) {
     }
   }
 
-  if ($depth > 2) { // Only show breadcrumbs if we have more than 2 links or if we are on the exempted pages
+  if ($depth > 1) { // Only show breadcrumbs if we have more than 2 links or if we are on the exempted pages
     return $output;
   }
 }
