@@ -7,7 +7,7 @@
  */
 
 function ibhr_omega_breadcrumb($vars) {
-  $output = '';
+  $output = '<ul class="breadcrumb">';
 
   // Optional: Add the site name to the front of the stack.
   if (!empty($vars['prepend'])) {
@@ -32,6 +32,8 @@ function ibhr_omega_breadcrumb($vars) {
       $output .= "<span class='bc-separator'>{$separator}</span>" ;
     }
   }
+
+  $output .= '</ul>';
 
   if ($depth > 1) { // Only show breadcrumbs if we have more than 2 links or if we are on the exempted pages
     return $output;
