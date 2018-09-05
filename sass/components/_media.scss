@@ -1,0 +1,10 @@
+#file-102,
+#file-128--2 {
+	text-align: center;
+
+	@include breakpoint(0px 650px) {
+		img {
+			float: none !important;
+		}
+	}
+}

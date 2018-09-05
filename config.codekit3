@@ -1194,6 +1194,13 @@
 		"oAP": "\/sass\/.sass-cache\/e52bd1931272a9d7c38aa1107af116bb2021a92e\/_heder.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/e52bd1931272a9d7c38aa1107af116bb2021a92e\/_media.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/e52bd1931272a9d7c38aa1107af116bb2021a92e\/_media.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/e52bd1931272a9d7c38aa1107af116bb2021a92e\/_navigation.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1334,6 +1341,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/components\/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/components\/_media.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/components\/_media.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -171,6 +171,17 @@ p {
   margin: 2px 10px 2px 2px;
 }
 
+#file-102,
+#file-128--2 {
+  text-align: center;
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  #file-102 img,
+  #file-128--2 img {
+    float: none !important;
+  }
+}
+
 .l-region--navigation {
   clear: both;
 }
