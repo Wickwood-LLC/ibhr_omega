@@ -34,3 +34,15 @@
 		}
 	}
 }
+
+#file-128 {
+	text-align: center;
+
+	@include breakpoint(0px 650px) {
+		img {
+			float: none !important;
+			max-width: 100%;
+			height: auto !important;
+		}
+	}
+}

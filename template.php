@@ -39,3 +39,14 @@ function ibhr_omega_breadcrumb($vars) {
     return $output;
   }
 }
+
+function ibhr_omega_preprocess_html(&$vars) {
+  $viewport = array(
+   '#tag' => 'meta',
+   '#attributes' => array(
+     'name' => 'viewport',
+     'content' => 'width=device-width, initial-scale=1, user-scalable=yes',
+   ),
+  );
+  drupal_add_html_head($viewport, 'viewport');
+}
