@@ -161,3 +161,14 @@ ul.breadcrumb {
 .media-image {
 	margin: 0.5em;
 }
+
+.messages {
+    padding: 10px 10px 10px 50px;
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    border: 1px solid;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    margin: 6px auto;
+}
