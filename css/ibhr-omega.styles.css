@@ -29,6 +29,7 @@ body {
 
 .l-page {
   height: 100%;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
