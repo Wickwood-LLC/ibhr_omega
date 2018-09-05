@@ -41,6 +41,7 @@ body {
 .l-header,
 .l-main,
 .l-bottom {
+  width: 100%;
   max-width: 1000px;
   margin: auto;
   display: block;
@@ -109,6 +110,7 @@ body {
           box-shadow: 1px 1px 3px 0px #5d5d5d;
   overflow: visible;
   margin-top: 6px;
+  margin-bottom: 0;
   display: inline-block;
   width: 100%;
   max-width: calc(1000px - 20px);
@@ -289,6 +291,17 @@ body {
   content: '\f0d7';
   margin-left: 0.5em;
   font-family: FontAwesome;
+}
+
+body.front .title-bar {
+  border-radius: 10px;
+  border: 2px solid #4f899e;
+  margin: 10px;
+  padding: 1em;
+  background: rgba(207, 242, 255, 0.85);
+  -webkit-box-shadow: 1px 1px 3px 0px #5d5d5d;
+          box-shadow: 1px 1px 3px 0px #5d5d5d;
+  overflow: auto;
 }
 
 body.not-front main#main-content {
