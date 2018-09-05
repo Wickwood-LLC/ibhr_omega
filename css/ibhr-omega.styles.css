@@ -179,6 +179,8 @@ p {
   #file-102 img,
   #file-128--2 img {
     float: none !important;
+    max-width: 100%;
+    height: auto !important;
   }
 }
 
