@@ -15,7 +15,6 @@ body.not-front main#main-content {
     padding: 1em;
     background: rgba(207, 242, 255, 0.85);
     box-shadow: 1px 1px 3px 0px #5d5d5d;
-    overflow: auto;
 }
 
 main#main-content {
@@ -167,4 +166,8 @@ ul.breadcrumb {
     width: calc(100% - 20px);
     box-sizing: border-box;
     margin: 6px auto;
+}
+
+.responsive-table {
+	overflow: auto;
 }

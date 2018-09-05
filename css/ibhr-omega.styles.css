@@ -379,7 +379,6 @@ body.not-front main#main-content {
   background: rgba(207, 242, 255, 0.85);
   -webkit-box-shadow: 1px 1px 3px 0px #5d5d5d;
           box-shadow: 1px 1px 3px 0px #5d5d5d;
-  overflow: auto;
 }
 
 main#main-content table {
@@ -537,6 +536,10 @@ ul.breadcrumb {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 6px auto;
+}
+
+.responsive-table {
+  overflow: auto;
 }
 
 .l-bottom {
