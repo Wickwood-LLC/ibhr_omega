@@ -10,3 +10,27 @@
 		}
 	}
 }
+
+#file-147 {
+	text-align: center;
+
+	@include breakpoint(0px 500px) {
+		img {
+			float: none !important;
+			max-width: 100%;
+			height: auto !important;
+		}
+	}
+}
+
+#file-148 {
+	text-align: center;
+
+	@include breakpoint(0px 620px) {
+		img {
+			float: none !important;
+			max-width: 100%;
+			height: auto !important;
+		}
+	}
+}

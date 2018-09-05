@@ -184,6 +184,28 @@ p {
   }
 }
 
+#file-147 {
+  text-align: center;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  #file-147 img {
+    float: none !important;
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
+#file-148 {
+  text-align: center;
+}
+@media (min-width: 0px) and (max-width: 620px) {
+  #file-148 img {
+    float: none !important;
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
 .l-region--navigation {
   clear: both;
 }
