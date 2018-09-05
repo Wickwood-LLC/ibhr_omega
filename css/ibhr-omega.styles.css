@@ -225,7 +225,7 @@ body {
   background-color: #bae8f3;
   border: 1px solid #49c3df;
 }
-#block-superfish-1 #superfish-1 .sf-sub-indicator {
+#block-superfish-1 #superfish-1 li a .sf-sub-indicator {
   display: none;
 }
 #block-superfish-1 .sf-accordion-toggle {
@@ -475,10 +475,6 @@ ul.breadcrumb {
 }
 
 .messages {
-  padding: 10px 10px 10px 50px;
-  background-position: 8px 8px;
-  background-repeat: no-repeat;
-  border: 1px solid;
   border-radius: 5px;
   width: calc(100% - 20px);
   -webkit-box-sizing: border-box;
