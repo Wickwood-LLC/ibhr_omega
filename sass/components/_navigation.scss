@@ -49,12 +49,22 @@
 				color: #082830;
 			}
 		}
+		li.sf-depth-1.menuparent > a:after {
+			content: '\f0d7';
+			font-family: FontAwesome;
+			position: relative;
+			left: 5px;
+		}
 
 		li.sfHover > ul {
 			left: 0;
 			top: 30px;
 			background-color: #bae8f3;
 			border: 1px solid #49c3df;
+		}
+
+		.sf-sub-indicator {
+			display: none;
 		}
 	}
 
