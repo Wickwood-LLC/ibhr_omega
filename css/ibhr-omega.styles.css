@@ -360,17 +360,6 @@ p {
   font-family: FontAwesome;
 }
 
-body.front .title-bar {
-  border-radius: 10px;
-  border: 2px solid #4f899e;
-  margin: 10px;
-  padding: 1em;
-  background: rgba(207, 242, 255, 0.85);
-  -webkit-box-shadow: 1px 1px 3px 0px #5d5d5d;
-          box-shadow: 1px 1px 3px 0px #5d5d5d;
-  overflow: auto;
-}
-
 body.not-front:not(.page-reviews) main#main-content {
   border-radius: 10px;
   border: 2px solid #4f899e;
@@ -379,6 +368,19 @@ body.not-front:not(.page-reviews) main#main-content {
   background: rgba(207, 242, 255, 0.85);
   -webkit-box-shadow: 1px 1px 3px 0px #5d5d5d;
           box-shadow: 1px 1px 3px 0px #5d5d5d;
+}
+
+.reviews-view-panel-page
+body.front .title-bar,
+body.reviews-view-panel-page .title-bar {
+  border-radius: 10px;
+  border: 2px solid #4f899e;
+  margin: 10px;
+  padding: 1em;
+  background: rgba(207, 242, 255, 0.85);
+  -webkit-box-shadow: 1px 1px 3px 0px #5d5d5d;
+          box-shadow: 1px 1px 3px 0px #5d5d5d;
+  overflow: auto;
 }
 
 main#main-content table {
@@ -488,7 +490,9 @@ ul.breadcrumb {
 }
 
 .page-title,
-.node__title {
+.node__title,
+body.reviews-view-panel-page .field--name-field-renter-name,
+body.reviews-view-panel-page .views-field-title h2 {
   color: #125564;
   text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.95);
   letter-spacing: 1px;
@@ -501,7 +505,9 @@ ul.breadcrumb {
   text-decoration: none;
 }
 .page-title > a,
-.node__title > a {
+.node__title > a,
+body.reviews-view-panel-page .field--name-field-renter-name > a,
+body.reviews-view-panel-page .views-field-title h2 > a {
   color: inherit;
   text-decoration: inherit;
 }
