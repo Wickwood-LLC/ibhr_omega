@@ -9,9 +9,13 @@
 	margin-bottom: 0;
 	display: inline-block;
 	width: 100%;
-	max-width: calc(1000px - 20px);
+	max-width: calc(100% - 20px);
 	box-sizing: border-box;
 	position: relative;
+
+	@include breakpoint(1020px) {
+		max-width: calc(1000px - 20px);
+	}
 
 	.site-logo {
 		float: left;
