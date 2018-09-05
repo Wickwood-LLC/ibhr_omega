@@ -9,6 +9,14 @@ html {
   background-size: cover;
 }
 
+body {
+  font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 0;
+}
+
 a {
   color: #025CCA;
 }
@@ -19,12 +27,10 @@ a:visited {
   color: #19798F;
 }
 
-body {
-  font-family: Tahoma,Arial,Helvetica,Sans-Serif;
-  font-style: normal;
-  font-weight: normal;
+p {
   font-size: 16px;
-  margin: 0;
+  margin: 12px 0;
+  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 }
 
 .l-page {

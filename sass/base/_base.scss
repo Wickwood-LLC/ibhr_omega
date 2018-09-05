@@ -1,5 +1,5 @@
 html {
-	background-color: #FFFFFF;
+    background-color: #FFFFFF;
     background-image: url('../images/Bottom_texture.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,37 +7,43 @@ html {
     background-size: cover;
 }
 
-a {
-	color: #025CCA;
-
-	&:hover {
-		color: #209BB6;
-	}
-	&:visited {
-		color: #19798F;
-	}
+body {
+    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
 }
 
-body {
-	font-family: Tahoma,Arial,Helvetica,Sans-Serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	margin: 0;
+a {
+    color: #025CCA;
+
+    &:hover {
+        color: #209BB6;
+    }
+    &:visited {
+        color: #19798F;
+    }
+}
+
+p {
+    font-size: 16px;
+    margin: 12px 0;
+    font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 }
 
 .l-page {
-	height: 100%;
-	min-height: 100vh;
-	display: flex;
-	flex-flow: column;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
 }
 
 .l-header,
 .l-main,
 .l-bottom {
-	width: 100%;
-	max-width: 1000px;
-	margin: auto;
-	display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: block;
 }
