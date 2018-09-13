@@ -56,7 +56,7 @@ ul.tabs {
     border-radius: 10px;
     border: 2px solid #4f899e;
     margin: 10px;
-    padding: 1em;
+    padding: 1em 1em 0.5em 1em;
     background: rgba(207, 242, 255, 0.85);
     box-shadow: 1px 1px 3px 0px #5d5d5d;
     overflow: auto;
@@ -79,6 +79,7 @@ ul.tabs {
         cursor: pointer;
         text-indent: 0;
         line-height: 1.7;
+        margin-bottom: 0.5em;
 
         &:hover {
         	color: #BAE8F3;
