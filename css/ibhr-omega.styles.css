@@ -230,6 +230,11 @@ input, select, textarea {
   }
 }
 
+.media-gallery-detail {
+  float: none;
+  margin: auto;
+}
+
 .l-region--navigation {
   clear: both;
 }
