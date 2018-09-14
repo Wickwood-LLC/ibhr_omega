@@ -184,6 +184,42 @@ input, select, textarea {
   margin: 2px 10px 2px 2px;
 }
 
+form#user-login {
+  display: table;
+  margin: auto;
+  max-width: 500px;
+}
+form#user-login .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+form#user-login .form-item label {
+  width: 96px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 96px;
+          flex: 0 1 96px;
+}
+form#user-login .form-item input.form-text {
+  min-width: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(100% - 102px);
+          flex: 1 1 calc(100% - 102px);
+}
+form#user-login .g-recaptcha {
+  display: table;
+  margin: auto;
+}
+form#user-login #edit-actions {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .maintenance-page .l-content {
   border-radius: 10px;
   border: 2px solid #4f899e;

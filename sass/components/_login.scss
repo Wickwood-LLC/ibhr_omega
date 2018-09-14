@@ -1,0 +1,28 @@
+form#user-login {
+	display: table;
+	margin: auto;
+	max-width: 500px;
+
+	.form-item {
+		display: flex;
+		flex-flow: row wrap;
+
+		label {
+			width: 96px;
+			flex: 0 1 96px;
+		}
+		input.form-text {
+			min-width: 0;
+			flex: 1 1 calc(100% - 102px);
+		}
+	}
+
+	.g-recaptcha {
+		display: table;
+		margin: auto;
+	}
+
+	#edit-actions {
+		justify-content: center;
+	}
+}
