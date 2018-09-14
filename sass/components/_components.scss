@@ -19,7 +19,7 @@
     	font-style: normal;
     	font-weight: bold;
     	text-decoration: none;
-    	margin-bottom: 0;
+    	margin-bottom: 0.5em;
     	background: url(../images/blockheader.png) no-repeat;
     }
 }
@@ -41,7 +41,6 @@ input[type="submit"] {
     cursor: pointer;
     text-indent: 0;
     line-height: 1.7;
-    margin-bottom: 0.5em;
 
     &:hover {
         color: #BAE8F3;
