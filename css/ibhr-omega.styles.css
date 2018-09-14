@@ -184,12 +184,14 @@ input, select, textarea {
   margin: 2px 10px 2px 2px;
 }
 
-form#user-login {
+form#user-login,
+form#user-pass {
   display: table;
   margin: auto;
   max-width: 500px;
 }
-form#user-login .form-item {
+form#user-login .form-item,
+form#user-pass .form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,26 +200,28 @@ form#user-login .form-item {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
-form#user-login .form-item label {
+form#user-login .form-item label,
+form#user-pass .form-item label {
   width: 96px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 96px;
           flex: 0 1 96px;
 }
-form#user-login .form-item input.form-text {
+form#user-login .form-item input.form-text,
+form#user-pass .form-item input.form-text {
   min-width: 0;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 calc(100% - 102px);
           flex: 1 1 calc(100% - 102px);
 }
-form#user-login .g-recaptcha {
+form#user-login .g-recaptcha,
+form#user-pass .g-recaptcha {
   display: table;
   margin: auto;
 }
-form#user-login #edit-actions {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+form#user-login #edit-actions,
+form#user-pass #edit-actions {
+  text-align: center;
 }
 
 .maintenance-page .l-content {
