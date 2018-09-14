@@ -27,3 +27,13 @@ form#user-pass {
 		text-align: center;
 	}
 }
+
+form#user-pass {
+	.form-item-name {
+		display: block;
+
+		label {
+			width: auto;
+		}
+	}
+}

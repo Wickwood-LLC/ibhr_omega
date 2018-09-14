@@ -224,6 +224,13 @@ form#user-pass #edit-actions {
   text-align: center;
 }
 
+form#user-pass .form-item-name {
+  display: block;
+}
+form#user-pass .form-item-name label {
+  width: auto;
+}
+
 .maintenance-page .l-content {
   border-radius: 10px;
   border: 2px solid #4f899e;
