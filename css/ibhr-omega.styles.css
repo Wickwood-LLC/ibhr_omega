@@ -88,6 +88,32 @@ input, select, textarea {
   background: url(../images/blockheader.png) no-repeat;
 }
 
+input[type="submit"] {
+  border: 1px solid black;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: "Comic Sans MS", Tahoma, Arial, Sans-Serif;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  color: #082830;
+  width: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#69cce3), to(#35b9d7));
+  background: linear-gradient(to bottom, #69cce3 0%, #35b9d7 100%);
+  padding: 0 8px;
+  cursor: pointer;
+  text-indent: 0;
+  line-height: 1.7;
+  margin-bottom: 0.5em;
+}
+input[type="submit"]:hover {
+  color: #BAE8F3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#20788d), to(#11424d));
+  background: linear-gradient(to bottom, #20788d 0%, #11424d 100%);
+}
+
 .l-footer {
   display: inline-block;
   width: 100%;
@@ -708,6 +734,9 @@ body.page-node-65 #webform-client-form-65 input.form-submit.active {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  color: #0B343D;
+  font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
+  font-size: 0.85em;
 }
 .l-bottom .l-region {
   -webkit-box-flex: 1;
