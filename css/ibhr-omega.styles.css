@@ -267,6 +267,9 @@ form#user-pass .form-item-name label {
   overflow: auto;
   text-align: center;
 }
+.maintenance-page .l-content h1 {
+  text-transform: capitalize;
+}
 
 #file-102,
 #file-128--2 {
