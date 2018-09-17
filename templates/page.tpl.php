@@ -97,6 +97,7 @@
             </ul>
             <?php endif; ?>
             <main id="main-content">
+                <?php if (!($is_front)): ?>
                 <div class="title-bar">
                     <?php print render($title_prefix); ?>
                     <?php if ($title): ?>
@@ -104,6 +105,7 @@
                     <?php endif; ?>
                     <?php print render($title_suffix); ?>
                 </div>
+                <?php endif; ?>
                 <?php print render($page['content']); ?>
                 <?php print $feed_icons; ?>
             </main>
