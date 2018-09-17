@@ -256,6 +256,9 @@ form#user-pass .form-item-name label {
   width: auto;
 }
 
+.maintenance-page .l-main {
+  margin-top: 1em;
+}
 .maintenance-page .l-content {
   border-radius: 10px;
   border: 2px solid #4f899e;
