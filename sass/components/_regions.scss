@@ -11,8 +11,25 @@
 	}
 
 	#widgets-element-socialmedia_share-default {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+
 		.widgets-element-horizontal {
 		    margin: 5px 3px;
 		}
+	}
+
+	form#mailchimp-signup-subscribe-block-subscribe-to-travel-tips-and-dis-form {
+		.form-item input {
+			width: 100%;
+		}
+		.form-item-mergevars-EMAIL {
+			margin-top: 1em;
+		}
+	}
+
+	.form-actions {
+	    text-align: center;
 	}
 }

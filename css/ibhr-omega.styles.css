@@ -749,8 +749,29 @@ body.page-node-65 #webform-client-form-65 input.form-submit.active {
           flex: 1 1 33%;
   min-width: 250px;
 }
+.l-bottom #widgets-element-socialmedia_share-default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .l-bottom #widgets-element-socialmedia_share-default .widgets-element-horizontal {
   margin: 5px 3px;
+}
+.l-bottom form#mailchimp-signup-subscribe-block-subscribe-to-travel-tips-and-dis-form .form-item input {
+  width: 100%;
+}
+.l-bottom form#mailchimp-signup-subscribe-block-subscribe-to-travel-tips-and-dis-form .form-item-mergevars-EMAIL {
+  margin-top: 1em;
+}
+.l-bottom .form-actions {
+  text-align: center;
 }
 
 /*# sourceMappingURL=ibhr-omega.styles.css.map */
