@@ -1,0 +1,27 @@
+body.reviews-view-panel-page .title-bar {
+  display: none; }
+
+body.reviews-view-panel-page .views-field-field-date-of-stay .views-label-field-date-of-stay,
+body.reviews-view-panel-page .views-field-field-date-of-stay .field-content {
+  display: inline-block;
+  font-weight: bold; }
+
+body.reviews-view-panel-page .pane-page-title,
+body.reviews-view-panel-page .views-field-field-renter-name h2,
+body.reviews-view-panel-page .views-field-title h2 {
+  color: #125564;
+  text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.95);
+  letter-spacing: 1px;
+  margin: 5px 0;
+  font-size: 28px;
+  text-align: center;
+  font-family: "Comic Sans MS", Tahoma, Arial, Sans-Serif;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none; }
+  body.reviews-view-panel-page .pane-page-title > a,
+  body.reviews-view-panel-page .views-field-field-renter-name h2 > a,
+  body.reviews-view-panel-page .views-field-title h2 > a {
+    color: inherit;
+    text-decoration: inherit; }
+/*# sourceMappingURL=reviews.css.map */

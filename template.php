@@ -50,3 +50,28 @@ function ibhr_omega_preprocess_html(&$vars) {
   );
   drupal_add_html_head($viewport, 'viewport');
 }
+
+function ibhr_omega_preprocess_page() {
+  if (arg(0) == 'contact-us') { // Contact page
+    drupal_add_css(drupal_get_path('theme', 'ibhr_omega') . '/css/contact.css', array('group' => CSS_THEME));
+  }
+  else if (arg(0) == 'reviews') { // Review page
+    drupal_add_css(drupal_get_path('theme', 'ibhr_omega') . '/css/reviews.css', array('group' => CSS_THEME));
+  }
+  else if ((arg(0) == 'node' && preg_match('/^\d+$/', arg(1)) && empty(arg(2))) ) { // Node view page.
+    $node = menu_get_object();
+    if ($node->type == 'media_gallery') {
+      drupal_add_css(drupal_get_path('theme', 'ibhr_omega') . '/css/media-gallery.css', array('group' => CSS_THEME));
+    }
+  }
+  else if (arg(0) == 'user' && arg(1) == 'login') {
+    drupal_add_css(drupal_get_path('theme', 'ibhr_omega') . '/css/login.css', array('group' => CSS_THEME));
+  }
+}
+
+/**
+ * Implements hook_preprocess_maintenance_page()
+ */
+function ibhr_omega_preprocess_maintenance_page() {
+  drupal_add_css(drupal_get_path('theme', 'ibhr_omega') . '/css/maintenance.css', array('group' => CSS_THEME));
+}

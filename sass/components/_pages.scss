@@ -7,8 +7,7 @@ body.not-front:not(.page-reviews) main#main-content {
     box-shadow: 1px 1px 3px 0px #5d5d5d;
 }.reviews-view-panel-page
 
-body.front .title-bar,
-body.reviews-view-panel-page .title-bar {
+body.front .title-bar {
 	border-radius: 10px;
 	border: 2px solid #4f899e;
 	margin: 10px;
@@ -127,10 +126,7 @@ ul.breadcrumb {
 }
 
 .page-title,
-.node__title,
-body.reviews-view-panel-page .pane-page-title,
-body.reviews-view-panel-page .views-field-field-renter-name h2,
-body.reviews-view-panel-page .views-field-title h2 {
+.node__title {
     color: #125564;
     text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.95);
     letter-spacing: 1px;
@@ -148,32 +144,6 @@ body.reviews-view-panel-page .views-field-title h2 {
     }
 }
 
-body.reviews-view-panel-page {
-	.title-bar {
-		display: none;
-	}
-
-	.views-field-field-date-of-stay .views-label-field-date-of-stay,
-	.views-field-field-date-of-stay .field-content {
-	   display: inline-block;
-	   font-weight: bold;
-	}
-}
-
-.media-gallery-view-full {
-	.field__items {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-	}
-
-	.field__item {
-		flex: 1 1 314px;
-		display: inline-block;
-		max-width: 320px;
-	}
-}
-
 .media-image {
 	margin: 0.5em;
 }
@@ -187,77 +157,4 @@ body.reviews-view-panel-page {
 
 .responsive-table {
 	overflow: auto;
-}
-
-body.page-node-65 {
-	.field--name-field-teaser {
-		float: left;
-		width: 40%;
-		height: 100%;
-		margin: 0 1em 0 1em;
-		padding: .5em;
-		border: 6px double #125564;
-	}
-
-	#webform-client-form-65 {
-	    width: 75%;
-	    border-style: double;
-	    border-color: #125564;
-	    border-width: 6px;
-	    margin-bottom: 1em;
-	    display: block;
-	    float: none;
-	    clear: both;
-	    margin-left: auto;
-	    margin-right: auto;
-
-	    label {
-	        width: 160px;
-	        display: block;
-	        float: left;
-	        margin-right: .5em;
-	        text-align: left;
-	    }
-
-	    .description {
-	    	font-size: 0.85em;
-			font-family: Verdana,Geneva,Arial,Helvetica,Sans-Serif;
-	    }
-
-	    .form-item.webform-component {
-	        width: 95%;
-	        margin-right: auto;
-	        margin-left: auto;
-	    }
-
-	    input.form-submit {
-	    	border: 1px solid black;
-	    	border-radius: 3px;
-	    	text-decoration: none;
-	    	font-family: "Comic Sans MS", Tahoma, Arial, Sans-Serif;
-	    	font-size: 14px;
-	    	display: inline-block;
-	    	vertical-align: middle;
-	    	white-space: nowrap;
-	    	text-align: center;
-	    	color: #082830;
-	    	width: auto;
-	    	background: linear-gradient(to bottom, #69cce3 0%, #35b9d7 100%);
-	    	padding: 0 8px;
-	    	cursor: pointer;
-	    	text-indent: 0;
-	    	line-height: 1.7;
-	    	margin: auto;
-	    	display: block;
-
-	    	&:hover {
-	    		color: #BAE8F3;
-	    		background: linear-gradient(to bottom, #20788d 0%,#11424d 100%);
-	    	}
-	    	&.active {
-	    		color: #092C34;
-	    		background: linear-gradient(to bottom, #98dceb 0%,#5ec8df 100%);
-	    	}
-	    }
-	}
 }

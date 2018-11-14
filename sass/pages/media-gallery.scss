@@ -1,0 +1,13 @@
+.media-gallery-view-full {
+	.field__items {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.field__item {
+		flex: 1 1 314px;
+		display: inline-block;
+		max-width: 320px;
+	}
+}

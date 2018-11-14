@@ -1,0 +1,30 @@
+form#user-login,
+form#user-pass {
+  display: table;
+  margin: auto;
+  max-width: 500px; }
+  form#user-login .form-item,
+  form#user-pass .form-item {
+    display: flex;
+    flex-flow: row wrap; }
+    form#user-login .form-item label,
+    form#user-pass .form-item label {
+      width: 96px;
+      flex: 0 1 96px; }
+    form#user-login .form-item input.form-text,
+    form#user-pass .form-item input.form-text {
+      min-width: 0;
+      flex: 1 1 calc(100% - 102px); }
+  form#user-login .g-recaptcha,
+  form#user-pass .g-recaptcha {
+    display: table;
+    margin: auto; }
+  form#user-login #edit-actions,
+  form#user-pass #edit-actions {
+    text-align: center; }
+
+form#user-pass .form-item-name {
+  display: block; }
+  form#user-pass .form-item-name label {
+    width: auto; }
+/*# sourceMappingURL=login.css.map */

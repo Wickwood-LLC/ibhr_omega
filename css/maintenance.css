@@ -1,0 +1,15 @@
+.maintenance-page .l-main {
+  margin-top: 1em; }
+
+.maintenance-page .l-content {
+  border-radius: 10px;
+  border: 2px solid #4f899e;
+  margin: 10px;
+  padding: 1em;
+  background: rgba(207, 242, 255, 0.85);
+  box-shadow: 1px 1px 3px 0px #5d5d5d;
+  overflow: auto;
+  text-align: center; }
+  .maintenance-page .l-content h1 {
+    text-transform: capitalize; }
+/*# sourceMappingURL=maintenance.css.map */

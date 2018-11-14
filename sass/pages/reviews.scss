@@ -1,0 +1,31 @@
+body.reviews-view-panel-page {
+	.title-bar {
+		display: none;
+	}
+
+	.views-field-field-date-of-stay .views-label-field-date-of-stay,
+	.views-field-field-date-of-stay .field-content {
+	   display: inline-block;
+	   font-weight: bold;
+	}
+
+	.pane-page-title,
+	.views-field-field-renter-name h2,
+	.views-field-title h2 {
+	    color: #125564;
+	    text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.95);
+	    letter-spacing: 1px;
+	    margin: 5px 0;
+	    font-size: 28px;
+	    text-align: center;
+	    font-family: "Comic Sans MS", Tahoma, Arial, Sans-Serif;
+	    font-style: normal;
+	    font-weight: bold;
+	    text-decoration: none;
+
+	    > a {
+	        color: inherit;
+	        text-decoration: inherit;
+	    }
+	}
+}

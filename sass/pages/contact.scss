@@ -1,0 +1,72 @@
+body.page-node-65 {
+	.field--name-field-teaser {
+		float: left;
+		width: 40%;
+		height: 100%;
+		margin: 0 1em 0 1em;
+		padding: .5em;
+		border: 6px double #125564;
+	}
+
+	#webform-client-form-65 {
+	    width: 75%;
+	    border-style: double;
+	    border-color: #125564;
+	    border-width: 6px;
+	    margin-bottom: 1em;
+	    display: block;
+	    float: none;
+	    clear: both;
+	    margin-left: auto;
+	    margin-right: auto;
+
+	    label {
+	        width: 160px;
+	        display: block;
+	        float: left;
+	        margin-right: .5em;
+	        text-align: left;
+	    }
+
+	    .description {
+	    	font-size: 0.85em;
+			font-family: Verdana,Geneva,Arial,Helvetica,Sans-Serif;
+	    }
+
+	    .form-item.webform-component {
+	        width: 95%;
+	        margin-right: auto;
+	        margin-left: auto;
+	    }
+
+	    input.form-submit {
+	    	border: 1px solid black;
+	    	border-radius: 3px;
+	    	text-decoration: none;
+	    	font-family: "Comic Sans MS", Tahoma, Arial, Sans-Serif;
+	    	font-size: 14px;
+	    	display: inline-block;
+	    	vertical-align: middle;
+	    	white-space: nowrap;
+	    	text-align: center;
+	    	color: #082830;
+	    	width: auto;
+	    	background: linear-gradient(to bottom, #69cce3 0%, #35b9d7 100%);
+	    	padding: 0 8px;
+	    	cursor: pointer;
+	    	text-indent: 0;
+	    	line-height: 1.7;
+	    	margin: auto;
+	    	display: block;
+
+	    	&:hover {
+	    		color: #BAE8F3;
+	    		background: linear-gradient(to bottom, #20788d 0%,#11424d 100%);
+	    	}
+	    	&.active {
+	    		color: #092C34;
+	    		background: linear-gradient(to bottom, #98dceb 0%,#5ec8df 100%);
+	    	}
+	    }
+	}
+}
