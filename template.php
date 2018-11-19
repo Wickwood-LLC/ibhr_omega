@@ -52,7 +52,7 @@ function ibhr_omega_preprocess_html(&$vars) {
 }
 
 function ibhr_omega_preprocess_page() {
-  if (arg(0) == 'contact-us') { // Contact page
+  if (request_path() == 'contact-us') { // Contact page
     drupal_add_css(drupal_get_path('theme', 'ibhr_omega') . '/css/contact.css', array('group' => CSS_THEME));
   }
   else if (arg(0) == 'reviews') { // Review page
