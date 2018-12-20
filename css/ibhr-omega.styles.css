@@ -167,6 +167,9 @@ input[type="submit"]:hover {
   text-align: center;
   margin: auto;
 }
+.view-image-gallery-slideshow .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
+  padding-left: 0;
+}
 .view-image-gallery-slideshow .views-slideshow-controls-bottom .views-slideshow-pager-field-item img {
   border: 5px solid transparent;
   box-sizing: border-box;
