@@ -130,7 +130,7 @@ input[type="submit"] {
 
         .views-slideshow-pager-field-item {
             padding-left: 0;
-            
+
             img {
                 border: 5px solid transparent;
                 box-sizing: border-box;
@@ -170,6 +170,18 @@ input[type="submit"] {
         .vscc-pause,
         .vscc-resume {
             margin: 0 15px;
+        }
+    }
+}
+
+ul.pager {
+    list-style: none;
+
+    li {
+        display: inline-block;
+
+        a {
+            text-decoration: none;
         }
     }
 }

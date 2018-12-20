@@ -207,6 +207,16 @@ input[type="submit"]:hover {
   margin: 0 15px;
 }
 
+ul.pager {
+  list-style: none;
+}
+ul.pager li {
+  display: inline-block;
+}
+ul.pager li a {
+  text-decoration: none;
+}
+
 .l-footer {
   display: inline-block;
   width: 100%;
