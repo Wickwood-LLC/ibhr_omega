@@ -75,3 +75,15 @@ function ibhr_omega_preprocess_page() {
 function ibhr_omega_preprocess_maintenance_page() {
   drupal_add_css(drupal_get_path('theme', 'ibhr_omega') . '/css/maintenance.css', array('group' => CSS_THEME));
 }
+
+/**
+ * Theme function pointing to custom VSCC images.
+ */
+function ibhr_omega_vscc_element_wwm_icons($vars) {
+  $image_vars = array(
+    'path' => drupal_get_path('module', 'wwm_vscc_skins') . '/images/vscc/wwm_' . $vars['element'] . '.svg',
+    'alt' => t($vars['element']),
+    'title' => t($vars['element']),
+  );
+  return theme('image', $image_vars);
+}
