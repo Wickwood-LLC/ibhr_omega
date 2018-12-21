@@ -31,6 +31,7 @@ p {
   font-size: 16px;
   margin: 12px 0;
   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+  text-align: justify;
 }
 
 input, select, textarea {
