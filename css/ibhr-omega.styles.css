@@ -689,8 +689,7 @@ ul.breadcrumb {
   font-size: 0.85em;
 }
 .l-bottom .l-region {
-  flex: 1 1 33%;
-  min-width: 250px;
+  flex: 1 1 250px;
 }
 .l-bottom #widgets-element-socialmedia_share-default {
   display: flex;
