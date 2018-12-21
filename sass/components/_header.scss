@@ -28,6 +28,14 @@
 		img {
 			width: 100%;
 		}
+
+		@include breakpoint(661px) {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			height: 142px;
+			width: calc(97% - 142px);
+		}
 	}
 
 	.site-name {
