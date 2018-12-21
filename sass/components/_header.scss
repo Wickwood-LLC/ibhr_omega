@@ -21,13 +21,23 @@
 		float: left;
 		margin-left: 3%;
 		text-align: center;
+		width: 24%;
+		display: inline-block;
+		max-width: 142px;
+
+		img {
+			width: 100%;
+		}
 	}
 
 	.site-name {
 		margin: 0;
 		margin-right: 35px;
-		padding-top: 0.5em;
 		text-align: center;
+		float: left;
+		margin: 0;
+		display: flex;
+		width: 73%;
 
 		a {
 			font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
@@ -35,17 +45,21 @@
 			font-weight: bold;
 			text-decoration: none;
 			font-variant: small-caps;
-			font-size: 44px;
+			font-size: 7vw;
 			padding: 0;
 			margin: 0;
 			color: #125564;
 			text-shadow: 1px 2px 3px rgba(255,255,255,0.95);
 			letter-spacing: 1.5px;
+
+			@include breakpoint(695px) {
+				font-size: 49px;
+			}
 		}
 	}
 
 	.site-slogan {
-		display: block;
+		display: inline-block;
 		text-align: center;
 		padding: 0;
 		margin: 0;
@@ -55,9 +69,13 @@
 		font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 28px;
+		font-size: 4vw;
 		text-decoration: none;
-		margin-right: 35px;
+		width: 100%;
+
+		@include breakpoint(695px) {
+			font-size: 28px;
+		}
 	}
 
 	#block-widgets-s-socialmedia-profile-default {
