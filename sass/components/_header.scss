@@ -19,7 +19,7 @@
 
 	.site-logo {
 		float: left;
-		margin-left: 3%;
+		margin-right: 3%;
 		text-align: center;
 		width: 24%;
 		display: inline-block;
@@ -61,7 +61,6 @@
 			display: flex;
 			flex-flow: row wrap;
 			align-items: center;
-			height: 142px;
 			width: calc(97% - 142px);
 		}
 	}
@@ -83,6 +82,7 @@
 
 		@include breakpoint(695px) {
 			font-size: 28px;
+			width: auto;
 		}
 	}
 
