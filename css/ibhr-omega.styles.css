@@ -275,15 +275,6 @@ ul.pager li a {
 .l-header .site-logo img {
   width: 100%;
 }
-@media (min-width: 661px) {
-  .l-header .site-logo {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    height: 142px;
-    width: calc(97% - 142px);
-  }
-}
 .l-header .site-name {
   margin: 0;
   margin-right: 35px;
@@ -309,6 +300,15 @@ ul.pager li a {
 @media (min-width: 695px) {
   .l-header .site-name a {
     font-size: 49px;
+  }
+}
+@media (min-width: 661px) {
+  .l-header .site-name {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 142px;
+    width: calc(97% - 142px);
   }
 }
 .l-header .site-slogan {
