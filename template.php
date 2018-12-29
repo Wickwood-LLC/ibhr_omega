@@ -64,7 +64,10 @@ function ibhr_omega_preprocess_page() {
       drupal_add_css(drupal_get_path('theme', 'ibhr_omega') . '/css/media-gallery.css', array('group' => CSS_THEME));
     }
   }
-  else if (arg(0) == 'user' && (user_is_anonymous())) {
+  else if (arg(0) == 'user') {
+    drupal_add_css(drupal_get_path('theme', 'ibhr_omega') . '/css/login.css', array('group' => CSS_THEME));
+  }
+  else if (arg(0) == 'user' && in_array(arg(1), array('login', 'password'))) {
     drupal_add_css(drupal_get_path('theme', 'ibhr_omega') . '/css/login.css', array('group' => CSS_THEME));
   }
 }

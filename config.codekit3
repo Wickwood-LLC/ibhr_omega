@@ -1356,6 +1356,19 @@
 		"oAP": "/sass/.sass-cache/f1f881209b8383ed2c0fd595b6a61df972c2c884/_triple.scssc",
 		"oF": 0
 		},
+	"/sass/abstractions/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/abstractions/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/sass/abstractions/README.md": {
 		"cB": 0,
 		"cS": 0,

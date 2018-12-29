@@ -1,5 +1,5 @@
 /* No files to import found in variables/* */
-/* No files to import found in abstractions/* */
+/* Fluid Typography */
 html {
   background-color: #FFFFFF;
   background-image: url("../images/Bottom_texture.jpg");
@@ -417,6 +417,17 @@ ul.pager li a {
   padding: 0 17px;
   line-height: 27px;
   text-align: left;
+  font-weight: bold;
+}
+@media screen and (min-width: 700px) {
+  #block-superfish-1 #superfish-1 li a {
+    font-size: calc(12px + 4 * ((100vw - 700px) / 175));
+  }
+}
+@media screen and (min-width: 875px) {
+  #block-superfish-1 #superfish-1 li a {
+    font-size: 16px;
+  }
 }
 #block-superfish-1 #superfish-1 li a .sf-sub-indicator {
   top: 0;
