@@ -322,7 +322,7 @@ ul.pager li a {
   font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 4.5vw;
   text-decoration: none;
   width: 100%;
 }
@@ -333,7 +333,7 @@ ul.pager li a {
 }
 @media (min-width: 860px) {
   .l-header .site-slogan {
-    width: auto;
+    width: calc(100% - 171px);
   }
 }
 .l-header #block-widgets-s-socialmedia-profile-default {

@@ -76,7 +76,7 @@
 		font-family: "Comic Sans MS",Tahoma,Arial,Sans-Serif;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 4vw;
+		font-size: 4.5vw;
 		text-decoration: none;
 		width: 100%;
 
@@ -84,7 +84,7 @@
 			font-size: 28px;
 		}
 		@include breakpoint(860px) {
-			width: auto;
+			width: calc(100% - 171px);
 		}
 	}
 
