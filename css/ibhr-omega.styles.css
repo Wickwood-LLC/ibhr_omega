@@ -421,10 +421,10 @@ ul.pager li a {
 }
 @media screen and (min-width: 700px) {
   #block-superfish-1 #superfish-1 li a {
-    font-size: calc(12px + 4 * ((100vw - 700px) / 175));
+    font-size: calc(12px + 4 * ((100vw - 700px) / 176));
   }
 }
-@media screen and (min-width: 875px) {
+@media screen and (min-width: 876px) {
   #block-superfish-1 #superfish-1 li a {
     font-size: 16px;
   }

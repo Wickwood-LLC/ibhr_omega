@@ -23,7 +23,7 @@
 				line-height: 27px;
 				text-align: left;
 				font-weight: bold;
-			    @include fluid-type(700px, 875px, 12px, 16px); // values inside are ($min_width, $max_width, $min_font, $max_font);
+			    @include fluid-type(700px, 876px, 12px, 16px); // values inside are ($min_width, $max_width, $min_font, $max_font)
 
 				.sf-sub-indicator {
 					top: 0;
