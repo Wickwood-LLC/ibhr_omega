@@ -4,7 +4,8 @@ body.page-node-65 .field--name-field-teaser {
   height: 100%;
   padding: .5em;
   border: 6px double #125564;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin-bottom: 12px; }
   @media (min-width: 520px) {
     body.page-node-65 .field--name-field-teaser {
       width: 40%;

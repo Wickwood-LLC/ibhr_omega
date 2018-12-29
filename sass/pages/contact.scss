@@ -8,6 +8,7 @@ body.page-node-65 {
 		padding: .5em;
 		border: 6px double #125564;
 		box-sizing: border-box;
+		margin-bottom: 12px;
 
 		@include breakpoint(520px) {
 			width: 40%;
