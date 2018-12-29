@@ -19,7 +19,7 @@
 				cursor: pointer;
 				text-decoration: none;
 				color: #092C34;
-				padding: 0 17px;
+				padding: 0 14px;
 				line-height: 27px;
 				text-align: left;
 				font-weight: bold;
@@ -71,8 +71,7 @@
 	}
 
 	.sf-accordion-toggle {
-		display: table;
-		margin: auto;
+		text-align: center;
 	}
 
 	#superfish-1-toggle {
@@ -89,6 +88,7 @@
 		border-radius: 5px;
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
+		font-weight: bold;
 
 		&:hover {
 			background: linear-gradient(to bottom, #2690a9 0%,#0b2d36 100%);
@@ -114,6 +114,7 @@
 			text-decoration: none;
 			line-height: 27px;
 			color: #092C34;
+			font-weight: bold;
 
 			&:hover {
 				color: #255d98;

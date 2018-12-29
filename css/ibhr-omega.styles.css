@@ -414,7 +414,7 @@ ul.pager li a {
   cursor: pointer;
   text-decoration: none;
   color: #092C34;
-  padding: 0 17px;
+  padding: 0 14px;
   line-height: 27px;
   text-align: left;
   font-weight: bold;
@@ -466,8 +466,7 @@ ul.pager li a {
   display: none;
 }
 #block-superfish-1 .sf-accordion-toggle {
-  display: table;
-  margin: auto;
+  text-align: center;
 }
 #block-superfish-1 #superfish-1-toggle {
   display: block;
@@ -483,6 +482,7 @@ ul.pager li a {
   border-radius: 5px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  font-weight: bold;
 }
 #block-superfish-1 #superfish-1-toggle:hover {
   background: linear-gradient(to bottom, #2690a9 0%, #0b2d36 100%);
@@ -504,6 +504,7 @@ ul.pager li a {
   text-decoration: none;
   line-height: 27px;
   color: #092C34;
+  font-weight: bold;
 }
 #superfish-1-accordion li a:hover {
   color: #255d98;
