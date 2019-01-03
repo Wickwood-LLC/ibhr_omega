@@ -1,6 +1,5 @@
 form#user-login,
 form#user-pass {
-  display: table;
   margin: auto;
   max-width: 500px; }
   form#user-login .form-item,
@@ -17,8 +16,10 @@ form#user-pass {
       flex: 1 1 calc(100% - 102px); }
   form#user-login .g-recaptcha,
   form#user-pass .g-recaptcha {
-    display: table;
-    margin: auto; }
+    display: inline-block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%; }
   form#user-login #edit-actions,
   form#user-pass #edit-actions {
     text-align: center; }
