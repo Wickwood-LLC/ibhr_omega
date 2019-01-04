@@ -231,6 +231,7 @@ ul.pager li a {
   font-size: 16px;
   font-family: Verdana,Geneva,Arial,Helvetica,Sans-Serif;
   color: #0F4652;
+  text-align: center;
 }
 .l-footer .footer-links a {
   color: #125868;
