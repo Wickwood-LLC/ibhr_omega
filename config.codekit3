@@ -1265,6 +1265,13 @@
 		"oAP": "/sass/.sass-cache/e52bd1931272a9d7c38aa1107af116bb2021a92e/_components.scssc",
 		"oF": 0
 		},
+	"/sass/.sass-cache/e52bd1931272a9d7c38aa1107af116bb2021a92e/_flexslider.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/sass/.sass-cache/e52bd1931272a9d7c38aa1107af116bb2021a92e/_flexslider.scssc",
+		"oF": 0
+		},
 	"/sass/.sass-cache/e52bd1931272a9d7c38aa1107af116bb2021a92e/_footer.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1434,6 +1441,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/sass/components/_components.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/components/_flexslider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/components/_flexslider.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
