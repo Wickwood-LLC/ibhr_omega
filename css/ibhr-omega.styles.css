@@ -521,7 +521,7 @@ ul.pager li a {
 }
 #block-superfish-1 #superfish-1 li.sf-depth-1.menuparent > a:after {
   content: '\f0d7';
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   position: relative;
   left: 5px;
 }
@@ -590,7 +590,7 @@ ul.pager li a {
 #superfish-1-accordion li.menuparent > a:after {
   content: '\f0da';
   margin-left: 0.5em;
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
 }
 #superfish-1-accordion li.menuparent ul {
   display: block;
@@ -603,7 +603,7 @@ ul.pager li a {
 #superfish-1-accordion li.menuparent.sf-expanded > a:after {
   content: '\f0d7';
   margin-left: 0.5em;
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
 }
 
 body.not-front:not(.page-reviews) main#main-content {
@@ -710,7 +710,7 @@ ul.action-links li {
 }
 ul.action-links li a:before {
   content: "\f067";
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   display: inline-block;
   margin-left: -1.3em;
   width: 1.3em;
